@@ -18,9 +18,9 @@ const Home: React.FC = ()=>{
           loading="eager"
           />
         </div>
-        <div className="relative z-10 text-center text-white">
-          <h1 className="font-bold text-5xl">Find your favorite place here!</h1>
-          <p className="font-bold">The best prices for over 2 million properties worldwide</p>
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Find your favorite place here!</h1>
+          <p className="text-xl sm:text-2xl font-medium drop-shadow-md">The best prices for over 2 million properties worldwide</p>
         </div>
       </section>
 
