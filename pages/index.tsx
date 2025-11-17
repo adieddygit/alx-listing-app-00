@@ -1,15 +1,15 @@
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
 import Image from "next/image";
-import HERO_IMAGE from '@/public/assets/images/Hero.jpg';
+import HERO_IMAGE from '@/public/assets/images/image19.png';
 import PropertyCard from "@/components/common/PropertyCard";
 
 const Home: React.FC = ()=>{
   return(
     
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <div className="max-w-full mx-auto">
       {/* <Hero Section/> */}
-      <section className="relative h-96 bg-gray-200 flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative h-[60vh] md:h-[70vh] w-full bg-cover bg-center flex items-center justify-center text-white">
+        <div className="absolute inset-0 bg-black opacity-100">
           <Image
           src={HERO_IMAGE}
           alt="House Image"

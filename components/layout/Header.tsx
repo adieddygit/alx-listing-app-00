@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Image from 'next/image';
+import Logo from '@/public/assets/images/Logo.png'
 import Link from 'next/link';
 
 const Header: React.FC = ()=>{
@@ -6,13 +8,13 @@ const Header: React.FC = ()=>{
     const filters = ['Rooms', 'Villa', 'Mansion', 'Countryside', 'Beachfront', 'City'];
 
     return(
-        <header className='bg-white shadow-md sticky top-0 z-50'>
-            <div className='max-w-7xl mx-auto flex items-center justify-between p-4'>
-                <h1 className='text-2xl font-bold text-blue-600'></h1>
+        <header className='max-w-full flex items-center justify-between bg-white shadow-md sticky top-0 z-50 p-2'>
+            <div className='ml-10 cursor-pointer'>
+                <Image src={Logo} alt='Logo' width={200} height={180} className='text-2xl font-bold text-blue-600'/>
             </div>
 
             {/* On Desktop */}
-            <nav className='hidden md:flex gap-6 items-center'>
+            <nav className='hidden md:flex gap-6 items-center p-6'>
                 {filters.map((filter)=>(
                     <span key={filter} className='px-3 py-1 bg-gray-100 rounded-full hover:bg-blue-100 cursor-pointer'>
                         {filter}
