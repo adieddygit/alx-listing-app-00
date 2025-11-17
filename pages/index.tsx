@@ -6,7 +6,7 @@ import PropertyCard from "@/components/common/PropertyCard";
 const Home: React.FC = ()=>{
   return(
     
-    <div>
+    <div className="max-w-7xl mx-auto px-4 py-10">
       {/* <Hero Section/> */}
       <section className="relative h-96 bg-gray-200 flex items-center justify-center">
         <div className="absolute inset-0">
@@ -40,7 +40,7 @@ const Home: React.FC = ()=>{
 
 
       {/* Listing Section */}
-      <section className="max-w-7xl mx-auto px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {PROPERTYLISTINGSAMPLE.map((property)=>(
           <PropertyCard key={property.name} property={property}/>
         ))}

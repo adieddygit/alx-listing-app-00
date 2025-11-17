@@ -8,7 +8,7 @@ interface Props{
 
 const PropertyCard: React.FC<Props> = ({property})=>{
     return(
-        <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
+        <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition p-4">
             <div className="relative h-60 w-full">
                 <Image src={property.image} alt={property.name} fill className="object-cover" />
                 {property.discount && (
@@ -17,7 +17,7 @@ const PropertyCard: React.FC<Props> = ({property})=>{
                     </span>
                 )}
             </div>
-            <div p-4>
+            <div>
                 <h2 className="text-lg font-semibold">{property.name}</h2>
                 <p className="text-gray-500 text-sm">{property.address.city}, {property.address.country}</p>
                 <p className="mt-2 font-bold">{property.price}/night</p>
